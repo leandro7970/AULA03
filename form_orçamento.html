@@ -1,0 +1,89 @@
+<html>
+
+<style>
+    input[type=text],
+    select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    
+    input[type=submit] {
+        width: 100%;
+        background-color: rgb(129, 127, 127);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: rgb(241, 241, 241);
+    }
+    
+    div {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+    }
+</style>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>Orçamento</title>
+</head>
+
+
+<body style="background-color:rgb(0, 0, 0);">
+    <div>
+
+        <h1>Orçamento</h1>
+        <form>
+
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome_c" placeholder="seu nome..">
+
+            <label for="emai">E-mail</label>
+            <input type="text" id="emai" name="email_c" placeholder="Seu e-mail..">
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone_cel" placeholder="Seu telefone ou celular ex: (99)9999-9999..">
+
+            <label for="telefone">Quem esta pedindo este orçamento</label><br>
+
+            <form action="">
+                <input type="radio" name="tipo" value="Empresa">Empresa
+                <input type="radio" name="tipo" value="pf"> Pessoa Fisica<br>
+            </form>
+
+            <label for="area">Para que area seu app sera construido</label>
+
+            <select id="area" name="area_n">
+            <option value="Saúde">Saúde</option>
+            <option value="E-commerce">E-commerce</option>
+            <option value="Mobilidade urbana">Mobilidade urbana</option>
+            <option value="Mercado Imobiliário">Mercado Imobiliário</option>
+            <option value="Educação">Educação</option>
+            <option value="outro">Outro</option>
+            </select>
+
+            <label for="sistema">Para Sistema Operacional seu app sera construido</label>
+
+            <select id="sistema" name="sistema_o">
+            <option value="Android">Para Android</option>
+            <option value="ios">Para Ios</option>
+            <option value="windows">Para windows Phone</option>
+            </select>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+</body>
+
+</html>
