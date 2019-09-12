@@ -2,31 +2,56 @@
 
 <head>
     <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="1609Sem sad.ico" />
+    <link rel="icon" href="1609Sem sad.ico" type="image/x-icon" />
     <title>My Apy</title>
 </head>
 
 <body class="body">
-
-    <nav>
-
-        <div class="div_menu">
-            <a class="tutulo_menu">My Apy</a>
-            <a>
-            </a><a class="nome_menu1" href="#">Página inicial</a>
-            <a class="nome_menu2" href="sobre.html">Sobre</a>
-            <a class="nome_menu3" href="contato.html">Contato</a>
-
-        </div>
-    </nav>
-
-    <div class="div_orca">
-        <h1 class="titulo_orca"> Faça já seu aplicativo conosco</h1>
-        <a class="titulo_orca2" href="form_orçamento.html">Peça Orçamento</a>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
     </div>
 
-    <footer class="espaco_img">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <header>
+        <div class="div_menu">
+            <nav>
+                <ul>
+                    <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span></li>
+                    <li><a class="nome_menu" href="index.html">MyApp</a></li>
+                    <li><a class="nome_menu1" href="index.html">Home</a></li>
+                    <li> <a class="nome_menu2" href="sobre.html">Sobre</a></li>
+                    <li><a class="nome_menu3" href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="div_orca">
+        <h1 class="titulo_orca">Faça já seu aplicativo conosco</h1>
+        <a class="titulo_orca2" href="form_orçamento.html">Pedir Orçamento</a>
+        <img class="espaco_img" width="50" height="100" src="xx.png" alt="smartphone">
+    </div>
+
+
+    <h1 class="titulo_video">Veja o precesso de criação de um aplicativo</h1>
+    <footer class="espaco_video">
         <iframe class="img" width="700 " height="500" src="https://www.youtube.com/embed/4fZCR_1m2f8 " frameborder="0 " allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture " allowfullscreen></iframe>
     </footer>
+
 </body>
 
 </html>
