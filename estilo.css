@@ -79,6 +79,10 @@ header a:hover {
     text-decoration: none;
 }
 
+.lista {
+    color: #ffffff;
+}
+
 .nome_menu1 {
     color: #000000;
     font-size: 20;
